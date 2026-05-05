@@ -11,7 +11,7 @@
    BODY STYLING
 ===================== */
 body {
-    font-family: 'Segoe UI', Arial, sans-serif;
+    font-family: Arial, sans-serif;
     background-color: #f4f6f8;
     color: #333;
     line-height: 1.6;
@@ -65,11 +65,11 @@ main {
 
 /* GRID LAYOUT (REQUIRED) */
 section {
+    display: grid;
+    gap: 10px;
     margin-bottom: 20px;
-    background-color: #f9f9f9;
-    padding: 15px;
-    border-radius: 8px;
 }
+
 /* =====================
    HEADINGS
 ===================== */
@@ -91,8 +91,6 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 15px;
-    border-radius: 8px;
-    overflow: hidden;
 }
 
 table, th, td {
@@ -113,10 +111,10 @@ td {
 /* =====================
    IMAGES
 ===================== */
-.responsive-img {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
+img {
+    margin-top: 10px;
+    border-radius: 8px;
+    max-width: 100%;
 }
 
 /* =====================
@@ -137,59 +135,4 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
-}
-/* =====================
-   QUIZ / FORM STYLING
-===================== */
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-h3 {
-    margin-top: 15px;
-}
-
-input[type="text"] {
-    padding: 8px;
-    width: 250px;
-}
-
-button {
-    padding: 10px;
-    margin-top: 10px;
-    width: 150px;
-}
-
-input[type="radio"],
-input[type="checkbox"] {
-    margin-right: 8px;
-    margin-top: 5px;
-}
-
-#results {
-    margin-top: 20px;
-    padding: 15px;
-    border-radius: 8px;
-    background-color: #f0f4f8;
-}
-
-section:hover {
-    transform: scale(1.01);
-    transition: 0.2s;
-}
-
-button {
-    padding: 10px 15px;
-    background-color: #002b5c;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #0056b3;
 }
