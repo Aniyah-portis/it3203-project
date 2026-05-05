@@ -3,13 +3,14 @@ function gradeQuiz() {
     let results = "";
 
     // Q1
-    let q1 = document.getElementById("q1").value.toLowerCase();
-    if (q1.includes("tim berners-lee")) {
-        score++;
-        results += "<p><strong>Q1:</strong> <span style='color:green;'>Correct</span></p>";
-    } else {
-        results += "<p><strong>Q1:</strong> <span style='color:red;'>Incorrect</span> (Answer: Tim Berners-Lee)</p>";
-    }
+    let q1 = document.querySelector('input[name="q1"]:checked');
+
+if (q1 && q1.value === "Tim Berners-Lee") {
+    score++;
+    results += "<p><strong>Q1:</strong> Correct</p>";
+} else {
+    results += "<p><strong>Q1:</strong> Incorrect</p>";
+}
 
     // Q2
     let q2 = document.querySelector('input[name="q2"]:checked');

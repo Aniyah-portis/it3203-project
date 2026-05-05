@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -23,13 +24,41 @@
 </header>
 
 <main>
-    <section>
+    <section class="quiz-container">
       <form id="quizForm" onsubmit="return false;">
 
-<h3>1. The first web browser was created by ________.</h3>
-<input type="text" id="q1">
+<div class="question-box">
 
-<h3>2. What protocol is used to transfer web pages?</h3>
+<h3 class="question">
+    1. The first web browser was created by ________.
+</h3>
+
+<label>
+    <input type="radio" name="q1" value="Tim Berners-Lee">
+    Tim Berners-Lee
+</label><br>
+
+<label>
+    <input type="radio" name="q1" value="Bill Gates">
+    Bill Gates
+</label><br>
+
+<label>
+    <input type="radio" name="q1" value="Steve Jobs">
+    Steve Jobs
+</label><br>
+
+<label>
+    <input type="radio" name="q1" value="Mark Zuckerberg">
+    Mark Zuckerberg
+</label><br>
+
+</div>
+
+<div class="question-box">
+<h3 class="question">
+<h3>2. What protocol is used to transfer web pages?
+</h3>
 <label>
     <input type="radio" name="q2" value="HTTP"> HTTP
 </label><br>
@@ -42,7 +71,15 @@
     <input type="radio" name="q2" value="SMTP"> SMTP
 </label><br>
 
-<h3>3. What makes Chrome fast?</h3>
+<label>
+    <input type="radio" name="q2" value="DNS"> DNS
+</label><br>
+</div>
+
+<div class="question-box">
+<h3 class="question">
+<h3>3. What makes Chrome fast?
+</h3>
 <label>
     <input type="radio" name="q3" value="V8"> V8 Engine
 </label><br>
@@ -53,9 +90,16 @@
 <label>
     <input type="radio" name="q3" value="CSS"> CSS
 </label><br>
+<label>
+    <input type="radio" name="q3" value="Java"> Java
+</label><br>
+</div>
 
 
-<h3>4. What improves Chrome stability?</h3>
+<div class="question-box">
+<h3 class="question">
+<h3>4. What improves Chrome stability?
+</h3>
 <label>
     <input type="radio" name="q4" value="Multiprocess"> Multi-process tabs
 </label><br>
@@ -65,8 +109,16 @@
 <label>
     <input type="radio" name="q4" value="Cache"> Cache
 </label><br>
+<label>
+    <input type="radio" name="q4" value="Extensions"> Extensions
+</label><br>
+</div>
 
-<h3>5. Which are browser security features? (Select all)</h3>
+
+<div class="question-box">
+<h3 class="question">
+<h3>5. Which are browser security features? (Select all)
+</h3>
 <label>
     <input type="checkbox" name="q5" value="Sandboxing"> Sandboxing
 </label><br>
@@ -76,6 +128,10 @@
 <label>
     <input type="checkbox" name="q5" value="Animations"> Animations
 </label><br>
+<label>
+    <input type="checkbox" name="q5" value="Firewall"> Firewall
+</label><br>
+</div>
 
 <br><br>
 <button type="button" onclick="gradeQuiz()">Submit</button>
